@@ -1,0 +1,38 @@
+{
+  "name": "github-search",
+  "version": "1.0.0-alpha.0",
+  "description": "GitHub Search - Client side application for finding GitHub users and listing their basic info and repositories",
+  "homepage": "https://github-search.demarque.com.br",
+  "license": "UNLICENSED",
+  "author": "Juliana Demarque <email@demarque.com.br>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmrqx/github-search.git"
+  },
+  "engines": {
+    "node": "v12.13.1",
+    "npm": "6.12.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ],
+  "private": true,
+  "scripts": {
+    "start:dev": "http-server",
+    "test": "jest --passWithNoTests"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "",
+    "@testing-library/jest-dom": "",
+    "eslint": "",
+    "eslint-config-standard": "",
+    "eslint-plugin-import": "",
+    "eslint-plugin-jest": "",
+    "eslint-plugin-standard": "",
+    "http-server": "",
+    "jest": "",
+    "prettier-standard": "",
+    "standardx": ""
+  }
+}
