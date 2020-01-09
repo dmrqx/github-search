@@ -33,6 +33,8 @@
     "http-server": "",
     "jest": "",
     "prettier-standard": "",
-    "standardx": ""
+    "standardx": "",
+    "stylelint": "",
+    "stylelint-config-standard": ""
   }
 }
