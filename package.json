@@ -1,6 +1,6 @@
 {
   "name": "github-search",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "GitHub Search - Client side application for finding GitHub users and listing their basic info and repositories",
   "homepage": "https://github-search.demarque.com.br",
   "license": "UNLICENSED",
