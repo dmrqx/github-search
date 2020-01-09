@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i,300,400&display=block');
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('.SFNSText-Light'),
+    local('.HelveticaNeueDeskInterface-Light'),
+    local('.LucidaGrandeUI'),
+    local('Ubuntu Light'),
+    local('Segoe UI Light'),
+    local('Roboto-Light'),
+    local('DroidSans'),
+    local('Tahoma');
+}
+
+@font-face {
+  font-family: mono;
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('.Monaco'),
+    local('.Menlo'),
+    local('.SFMono-Regular'),
+    local('Consolas'),
+    local('Liberation Mono'),
+    local('Courier New');
+}
+
+:root {
+  --prince: #ac53f2;
+  --michael: #fff;
+  --venom: #000;
+  --granny: #5c5c5c;
+}
+
+body {
+  font: normal normal 300 10px/normal 'Raleway', 'system', sans-serif;
+  color: var(--venom);
+}
+
+.app-title {
+  margin-top: calc(50vh * 0.6);
+  font-size: calc(20px + 40 * ((100vw - 300px) / (1000)));
+  text-align: center;
+}
+
+.contrast-text {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.monospaced {
+  font-family: 'mono', monospace;
+}
+
+.search-form {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 750px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.search-form::before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  width: calc(100% - 24px);
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.4);
+  content: '';
+}
+
+.search-input {
+  flex: 1 0 auto;
+  padding: 0 17px;
+  background: var(--michael);
+  border: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: var(--granny);
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.search-input::-ms-clear {
+  visibility: hidden;
+}
+
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.search-input:hover {
+  background: #f9f9f9;
+}
+
+.search-input:focus {
+  background: #f9f9f9;
+  outline: rgba(0, 0, 0, 0.2) auto 1px;
+}
+
+.submit-button {
+  position: relative;
+  flex: 0 1 100px;
+  padding: 0;
+  background: var(--prince);
+  border: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: var(--michael);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.submit-button::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--michael);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  content: '';
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.submit-button:hover::before {
+  opacity: 0.15;
+}

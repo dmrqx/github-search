@@ -4,18 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GitHub Search</title>
-    <meta name=”description” content=”Client side application for finding GitHub users and listing their basic info and repositories">
-    <style>
-      body {
-        padding: 100px 15px;
-        text-align: center;
-      }
-    </style>
+    <meta name=”description” content=”Client side application for finding GitHub
+    users and listing their basic info and repositories">
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>GitHub Search</h1>
+    <h1 class="app-title">
+      <span class="monospaced">Github</span>
+      <em class="contrast-text">Search</em>
+    </h1>
     <form
       id="search-form"
+      class="search-form"
       method="get"
       action="https://github.com/search"
       autocapitalize="none"
@@ -23,6 +23,7 @@
     >
       <input
         id="search-input"
+        class="search-input"
         name="q"
         type="search"
         pattern="^[a-zA-Z0-9]+(-?[a-zA-Z0-9]+)*$"
@@ -33,7 +34,12 @@
         required
       />
       <input type="hidden" name="type" value="Users" />
-      <button aria-label="Confirm search request">Search</button>
+      <button
+        class="submit-button monospaced"
+        aria-label="Confirm search request"
+      >
+        Search
+      </button>
     </form>
   </body>
 </html>

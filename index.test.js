@@ -17,10 +17,10 @@ afterEach(() => {
 
 describe('GitHub User Search Form', () => {
   describe('Interface', () => {
-    it('renders a heading that reads "GitHub Search"', () => {
+    it('renders a heading that reads "Github Search"', () => {
       const pageHeading = screen.getByRole('heading')
 
-      expect(pageHeading).toHaveTextContent('GitHub Search')
+      expect(pageHeading).toHaveTextContent(/github search/i)
     })
 
     it('renders a form with a search input and a submit button', () => {
